@@ -1,33 +1,145 @@
 body{
     text-align: center;
     background-color: #000000;
-    margin-top: 150px;
-    background: url(/Users/abdo_/Desktop/cash/img/dol.png) no-repeat ;
-    background-size: 100%;
+    margin: 0px;
     }
+body .logo {
+    float: right;
+    width: 16%;
+    background-color: #4b5557;
+    border-radius: 50%;
+
+}
+.container {
+    overflow: hidden;
+}
 #div{
-    border: solid #251f51;
+    border: solid #252F31;
     display: inline-block;
     font-size: 55px;
-    background: #8cb999;
+    background: #888;
     padding: 2px;
     text-align: center;
-    margin-top: 9px;
-    height: 71px;
+    margin: 9px;
+    height: 80px;
     width: 93%;
-    font-family: monospace;
+    font-family: cursive;
     }
+@media (max-width: 576px) {
+    #div{ 
+    border: solid #252F31;
+    display: inline-block;
+    font-size: 28px;
+    background: #888;
+    padding: 2px;
+    text-align: center;
+    margin: 4px;
+    height: 41px;
+    width: 92%;
+    font-family: cursive;
+    } 
+}
 #input,#currency,#button{
-    background-color: #8cb999;
-    border: solid #251f51;
-    height: 49px;
+    background-color: #888;
+    border: solid #252F31;
+    height: 65px;
     font-size: 37px;
     width: 31%;
-    font-family: monospace;
+    font-family: cursive;
     text-align: center;
     }
-#container{
-    width: 70%;
-    height: 70%;
-    display: contents;            
+@media (max-width: 576px) {
+    #input,#currency,#button{
+    background-color: #888;
+    border: solid #252F31;
+    height: 35px;
+    font-size: 16px;
+    width: 25%;
+    font-family: cursive;
+    text-align: center;
     }
+
+}
+/* Start Contact Me */
+
+.contact {
+    background-color: #252F31;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.contact .info {width: 50%;margin-right: 5%;}
+
+.contact h2 {color: #FFF;margin-left:40px;}
+
+.contact p {color: #6A6E71;margin-left:40px;}
+
+.contact p strong {color:#d1d6da;}
+
+.contact .form {width: 45%;}
+
+.contact .form label {display: block;color: #d1d6da;margin: 10px 0;}
+
+.contact .form input[type="text"] {
+    background-color: #4b5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.contact .form textarea {
+    background-color: #4b5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.contact .form input[type="submit"] {
+    background-color: #191e22;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+
+/* End Contact Me */
+
+/* Start footer */
+
+.footer {
+    background-color: #191e22;
+    color: #6a6e71;
+    padding: 20px 0;
+}
+
+.footer ul {list-style: none;padding-left: 0;margin: 10px 0 0;}
+
+.footer ul li {display: inline-block;}
+
+/* Start footer */
+
+/* Start My Framework */
+
+.my-button {
+    background: none;
+    border: 3px solid #2dcc70;
+    padding:10px 30px ;
+    color: #2dcc70;
+    font-weight: bold;
+}
+
+.fl-left {float: left;} /* Floating Element Left */
+
+p {line-height: 1.7;color: #888;}
+
+h2, h3 {color:#777;}
+
+.text-c {text-align: center;}
+
+/* End My Framework */
