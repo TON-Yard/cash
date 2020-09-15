@@ -8,10 +8,17 @@ body .logo {
     width: 16%;
     background-color: #4b5557;
     border-radius: 50%;
-
+    margin: 9px;
 }
 .container {
     overflow: hidden;
+    margin-top: 188px;
+}
+@media (max-width: 576px) {
+    .container{
+    overflow: hidden;
+    margin-top: 68px;
+    }
 }
 #div{
     border: solid #252F31;
