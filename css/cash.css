@@ -1,118 +1,201 @@
 body{
     text-align: center;
-    background-color: #000000;
+    background-color: #9e76be;
     margin: 0px;
     }
-body .logo {
+
+.logo {
     float: right;
-    width: 16%;
-    background-color: #4b5557;
+    width: 11%;
     border-radius: 50%;
-    margin: 9px;
+    margin: 5px;
+    background-color:#000000;
 }
+
+@media (max-width: 576px) {
+    .logo{
+        width: 18%;
+    }
+}
+
 .container {
     overflow: hidden;
-    margin-top: 188px;
+    display: inline-block;
+    width: 100%;
 }
+
 @media (max-width: 576px) {
     .container{
     overflow: hidden;
-    margin-top: 68px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
 }
-#div{
+
+#input {
+    background-color: #b5aaac;
     border: solid #252F31;
-    display: inline-block;
-    font-size: 55px;
-    background: #888;
-    padding: 2px;
+    height: 57px;
+    font-size: 37px;
+    width: 31%;
+    margin-right: 10px;
     text-align: center;
-    margin: 9px;
-    height: 80px;
-    width: 93%;
-    font-family: cursive;
-    }
+    border-radius: 11px;
+    font-weight: bold;
+    cursor: auto;
+}
+
 @media (max-width: 576px) {
-    #div{ 
-    border: solid #252F31;
-    display: inline-block;
-    font-size: 28px;
-    background: #888;
-    padding: 2px;
-    text-align: center;
-    margin: 4px;
-    height: 41px;
-    width: 92%;
-    font-family: cursive;
-    } 
+    #input{
+        height: 27px;
+        font-size: 16px;
+        width: 25%;
+    }
 }
-#input,#currency,#button{
-    background-color: #888;
+
+#currency{
+    background-color: #b5aaac;
     border: solid #252F31;
     height: 65px;
     font-size: 37px;
-    width: 31%;
-    font-family: cursive;
+    width: 24%;
     text-align: center;
-    }
+    cursor: pointer;
+    border-radius: 11px;
+    font-weight: bold;
+}
+
 @media (max-width: 576px) {
-    #input,#currency,#button{
-    background-color: #888;
+    #currency{
+        height: 35px;
+        font-size: 16px;
+        width: 25%;
+    }
+}
+
+#button{
+    background-color: #b5aaac;
     border: solid #252F31;
-    height: 35px;
-    font-size: 16px;
-    width: 25%;
-    font-family: cursive;
+    height: 65px;
+    font-size: 37px;
+    width: 15%;
     text-align: center;
+    cursor: pointer;
+    border-radius: 24px;
+    font-weight: bold;
+    margin-left: 15px;
     }
 
+@media (max-width: 576px) {
+    #input,#currency,#button{
+        height: 35px;
+        font-size: 16px;
+        width: 25%;
+    }
 }
+
+#div{
+    border: solid #252F31;
+    display: inline-block;
+    font-size: 50px;
+    background: #b5aaac;
+    padding: 2px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    height: 61px;
+    width: 70%;
+    cursor: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    #div{ 
+        font-size: 20px;
+        margin: 6px;
+        height: 23px;
+        width: 70%;
+        border-radius: 18px;
+    } 
+}
+
 /* Start Contact Me */
 
 .contact {
-    background-color: #252F31;
+    background-color: #000000;
     overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .contact .info {width: 50%;margin-right: 5%;}
 
 .contact h2 {color: #FFF;margin-left:40px;}
 
-.contact p {color: #6A6E71;margin-left:40px;}
+@media (max-width: 576px) {
+    .contact h2 {
+        font-size: large;
+    }
+}
+
+.contact p {color: #cccc;margin-left:40px;}
 
 .contact p strong {color:#d1d6da;}
 
-.contact .form {width: 45%;}
+.contact .form {width: 45%;margin-top: 58px;}
 
-.contact .form label {display: block;color: #d1d6da;margin: 10px 0;}
+.contact .form label {display: block;color: #FFF;margin: 10px 0;}
 
 .contact .form input[type="text"] {
-    background-color: #4b5557;
+    background-color: #CCCC;
     color: #FFF;
     padding: 10px;
     border: 0;
-    width: 80%;
-    margin-bottom: 10px;
+    width: 89%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+.contact .form input[type="text"] {
+    width: auto;
+    }
 }
 
 .contact .form textarea {
-    background-color: #4b5557;
+    background-color: #CCCC;
     color: #FFF;
     padding: 10px;
     border: 0;
-    width: 80%;
+    width: 89%;
     margin-bottom: 10px;
-    height: 300px;
+    margin-top: 10px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+.contact .form textarea {
+    height: 90px;
+    width: 169px;
+    }
 }
 
 .contact .form input[type="submit"] {
-    background-color: #191e22;
+    background-color: #CCCC;
     color: #FFF;
+    font-size: large;
     padding: 10px 20px;
     border: 0;
     margin-top: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+@media (max-width: 576px) {
+    .contact .form input[type="submit"] {
+        font-size: small;
+    }
 }
 
 /* End Contact Me */
@@ -120,14 +203,24 @@ body .logo {
 /* Start footer */
 
 .footer {
-    background-color: #191e22;
-    color: #6a6e71;
-    padding: 20px 0;
+    background-color: #331f40;
+    color: #ccc;
+    padding: 8px;
 }
 
 .footer ul {list-style: none;padding-left: 0;margin: 10px 0 0;}
 
 .footer ul li {display: inline-block;}
+
+.footer .fab {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .footer .fab {
+        font-size: x-large;
+    }
+}
 
 /* Start footer */
 
